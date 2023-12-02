@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #151f28;
+    font-family: 'popins' , sans-serif;
+}
+
+.container{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+}
+
+.front{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.image{
+    width: 90px;
+    height: 90px;
+    background-image: url(love.JPG);
+}
