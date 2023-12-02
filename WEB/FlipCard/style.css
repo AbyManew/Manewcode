@@ -13,8 +13,8 @@ body{
 }
 
 .container{
-    width: 250px;
-    height: 250px;
+    width: 325px;
+    height: 325px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -46,7 +46,85 @@ body{
 }
 
 .image{
-    width: 90px;
-    height: 90px;
-    background-image: url(love.JPG);
+    width: 100px;
+    height: 100px;
+    background-image: url(love.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid blueviolet;
+}
+
+.img-container{
+    border: 2px solid #3f71f4;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.front::before{
+    content: '';
+    width: 100%;
+    background-color: #3f71f4;
+    height: 37%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+h3{
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+button{
+    background: none;
+    border: none;
+    outline: none;
+    background: #3f71f4;
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.flw{
+    padding: 5px 16px;
+}
+
+.btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.back{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: white;
+}
+
+span{
+    color: red;
+}
+
+.container:hover .card{
+    transform: rotateY(180deg);
 }
